@@ -11,7 +11,16 @@
     <header>
       <div class="container">
         <h1 class="title">Learning Flask</h1>
+        <div id="login">
+
+    	{%if 'email' not in session %}
+  			<a href="{{url_for('login')}}">Click Here to Login </a>
+  			{% else %}
+  			<a href="{{url_for('logout')}}">Logout </a>
+  			{% endif %}</div>
       </div>
+
+
     </header>
 
     {% block content %}

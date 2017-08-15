@@ -23,10 +23,14 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-
+#login a {
+    float: right;
+    padding-right: 30px;
+}
 .container {
   width: 1000px;
   margin: 0 auto;
+  min-height: 30px;
 }
 
 .pull-left {
