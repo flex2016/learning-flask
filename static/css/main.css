@@ -15,7 +15,6 @@ body {
 h2 {
 
   font-weight: 900;
-  disp
   letter-spacing: -1.2px;
 }
 
@@ -101,19 +100,18 @@ a {
   position: relative;
  }
 
- .header__logo-box {
-  position: absolute;
-  top: 2rem;
-  left: 2rem; }
-.header__logo {
-  height: 10.5rem; }
+
 .header__text-box {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 5%;
+  left: 100%;
   transform: translate(-150%, 0%);
   text-align: left;
   width: 30%;
+}
+
+.header > .header__text-box {
+  font-size: 1rem;
 }
 
 .title {
@@ -307,4 +305,13 @@ a {
 
 .leaflet-popup-content p {
   margin: 10px 0 ;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  .header > .header__text-box > .about {
+    display: none;
+
+  }
+
 }
