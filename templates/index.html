@@ -1,21 +1,17 @@
 {% extends "layout.html" %}
 
 {% block content %}
-  <main class="hero-section">
-    <div class="container">
 
-      <div class="section-content">
-        <h2>Discover places near you.</h2>
-        <a href="{{ url_for('signup') }}" class="btn-primary">Sign up</a>
-        <a href="{{ url_for('about') }}" class="btn-secondary">Learn more</a>
+    <header class="header" id="header">
+        <div class="header__text-box">
+            <h2>Discover places near you.</h2>
+               <a href="{{ url_for('home') }}" class="btn-primary">Discover</a>
+            <p>With this app you can find places you like, and discover new points of interest wherever you are.</p>
+
+
+
+
       </div>
+    </header>
 
-      <div class="section-device">
-        <img src="static/img/device.png">
-      </div>
-
-      <div class="clearfix"></div>
-
-    </div>
-  </main>
 {% endblock %}

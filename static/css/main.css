@@ -14,8 +14,8 @@ body {
 
 h2 {
 
-  font-weight: 300;
-
+  font-weight: 900;
+  disp
   letter-spacing: -1.2px;
 }
 
@@ -41,9 +41,6 @@ a {
   float: right;
 }
 
-.clearfix {
-  clear: both;
-}
 
 .section-content {
   color: #3a3a3a;
@@ -62,8 +59,8 @@ a {
 }
 
 .btn-primary {
-  background: #4285f4;
-  border: 1px solid #1266f1;
+  background: #666666;
+  border: 1px solid #666666;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -95,9 +92,28 @@ a {
  * Header
  */
 
-header {
-  background-color: #fff;
-  padding: 25px 0;
+ .header {
+  height: 100vh;
+  background-image:
+      url(../img/places.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+ }
+
+ .header__logo-box {
+  position: absolute;
+  top: 2rem;
+  left: 2rem; }
+.header__logo {
+  height: 10.5rem; }
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-150%, 0%);
+  text-align: left;
+  width: 30%;
 }
 
 .title {
@@ -138,7 +154,9 @@ header {
 /*
  * Hero section
  */
-
+.hero-section {
+  margin: 50px;
+}
 .hero-section .section-content {
   position: relative;
   top: 100px;
