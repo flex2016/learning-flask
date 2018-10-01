@@ -40,7 +40,7 @@ class Place(object):
 
   def address_to_latlng(self, address):
 
-    g = geocoder.google(address)
+    g = geocoder.arcgis(address)
     return (g.lat, g.lng)
 
   def query(self, address):
