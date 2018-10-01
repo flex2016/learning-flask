@@ -73,8 +73,8 @@ def logout():
 
 @app.route("/home", methods=["GET", "POST"])
 def home():
-  if 'email' not in session:
-    return redirect(url_for('login'))
+  # if 'email' not in session:
+  #   return redirect(url_for('login'))
 
   form = AddressForm()
 
